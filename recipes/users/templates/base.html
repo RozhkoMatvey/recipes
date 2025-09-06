@@ -16,7 +16,7 @@
 <body>
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container">
-      <a class="nav-link active" style="color: aliceblue;" href="{% url 'recipes-home' %}">Рецепты</a>
+      <a class="nav-link active" style="color: aliceblue;" href="{% url 'recipes-home' %}">Темы</a>
       <button
         class="navbar-toggler"
         type="button"
@@ -32,7 +32,7 @@
         <ul class="navbar-nav">
               {% if request.user.is_authenticated %}
               <li class="nav-item">
-                <a class="nav-link active" style="color: aliceblue;" href="{% url 'recipes-create' %}">Добавить рецепт</a>
+                <a class="nav-link active" style="color: aliceblue;" href="{% url 'recipes-create' %}">Добавить задания</a>
               </li>
                 <a href="{% url 'dashboard' %}" class="nav-link active" style="color: aliceblue;">Мой профиль</a>
                 <a  class="nav-link active" style="color: aliceblue;" href="{% url 'logout' %}">Выйти</a>
